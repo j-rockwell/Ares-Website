@@ -1,0 +1,38 @@
+<img class="home-banner animated fadeIn" style="object-position: 50% 40%;" src="/images/palace2.png">
+
+<div class="container container-fill">
+    <div class="account-form-container animated fadeIn">
+        <img class="animated bounceIn delay-1s" src="https://minotar.net/cube/{{session.username}}">
+        <h1>Hey, {{session.username}}!</h1>
+
+        <p>Your account setup is almost complete! Please fill out the form below and you'll be on your way.</p>
+
+        <br>
+
+        <form class="account-create-form" action="/account/create/{{session._id}}" method="POST">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter your email address" required>
+                <small id="emailHelp" class="form-text text-muted">This is just for the confirmation email. We will never contact you or sell your information.</small>
+            </div>
+
+            <div class="row">
+                <div class="col-md">
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter a password that is 6-32 characters long" required>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="form-group">
+                        <label for="password2">Re-enter Password</label>
+                        <input type="password" class="form-control" id="password2" name="password2" required>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-dark">Create Account</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+.account-form-container {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    margin-top: 64px;
+}
+
+.account-form-container img {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.account-form-container h1 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.account-form-container p {
+    text-align: center;
+    font-size: 0.75rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.account-form-container button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 32px;
+}

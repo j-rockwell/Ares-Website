@@ -1,0 +1,72 @@
+<img class="home-banner animated fadeIn" style="object-position: 50% 30%;" src="/images/cave2.png">
+
+<div class="container container-fill">
+    <h1 style="margin-top: 16px; margin-bottom: 16px; font-family: 'Archivo Black', sans-serif; text-align: center; font-size: 1.5rem;">EDIT PROFILE</h1>
+
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas fa-users-cog" style="margin-right: 8px;"></i> Main Settings
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    <form class="form" action="/account/edit" method="POST" style="display: block; margin: 0 auto; max-width: 80%;">
+                        <div class="form-group">
+                            <label for="discord">Discord <i class="fab fa-discord"></i></label>
+                            <input type="text" class="form-control" id="discord" name="discord" value="{{user.discord_id}}">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="youtube">YouTube <i class="fab fa-youtube"></i></label>
+                            <input type="text" class="form-control" id="discord" name="youtube" value="{{user.youtube_channel}}">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="twitch">Twitch <i class="fab fa-twitch"></i></label>
+                            <input type="text" class="form-control" id="twitch" name="twitch" value="{{user.twitch_channel}}">
+                        </div>
+
+                        <button type="submit" class="btn btn-dark btn-sm" style="display: block; margin: 0 auto; margin-top: 32px;">Update</button>          
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="fas fa-lock" style="margin-right: 8px;"></i> Update Password
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <form class="form" action="/account/password/update" method="POST" style="display: block; margin: 0 auto; max-width: 80%;">
+                        <div class="form-group">
+                            <label for="password">Current Password</label>
+                            <input type="password" class="form-control" id="twitch" name="password">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="newpassword">New Password</label>
+                            <input type="password" class="form-control" id="newpassword" name="newpassword">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="newpassword2">Re-enter New Password</label>
+                            <input type="password" class="form-control" id="newpassword2" name="newpassword2">
+                        </div>
+
+                        <button type="submit" class="btn btn-dark btn-sm" style="display: block; margin: 0 auto; margin-top: 32px;">Change Password</button>   
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

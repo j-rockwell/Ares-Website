@@ -1,0 +1,21 @@
+.profile-sidebar {
+    margin-top: 32px;
+}
+
+.profile-sidebar h1, .profile-sidebar p, .profile-sidebar a {
+    text-align: center;
+}
+
+.profile-sidebar p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+.card-header {
+    background-color: #343a40 !important;
+}
+
+.btn-link {
+    color: white!important;
+}

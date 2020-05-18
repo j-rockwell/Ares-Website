@@ -1,0 +1,32 @@
+<img class="home-banner animated fadeIn" style="object-position: 50% 40%;" src="/images/palace2.png">
+
+<div class="container container-fill">
+    <div class="account-form-container animated fadeIn">
+        <img class="animated bounceIn delay-1s" src="https://minotar.net/cube/{{session.username}}">
+        <h1>Hey, {{session.username}}!</h1>
+
+        <p>Let's get you back in to your account. Enter a new password and you'll be on your way.</p>
+
+        <br>
+
+        <form class="account-create-form" action="/account/reset/{{session._id}}" method="POST">
+            <div class="row">
+                <div class="col-md">
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter a password that is 6-32 characters long" required>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="form-group">
+                        <label for="password2">Re-enter Password</label>
+                        <input type="password" class="form-control" id="password2" name="password2" required>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-dark">Change Password</button>
+        </form>
+    </div>
+</div>

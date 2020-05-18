@@ -1,0 +1,29 @@
+{
+  "name": "ares-website",
+  "version": "1.0.0",
+  "description": "Website for competitive multiplayer Minecraft server Ares",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Rockwell",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.660.0",
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-handlebars": "^4.0.1",
+    "express-session": "^1.17.0",
+    "http-errors": "^1.7.3",
+    "mongoose": "^5.9.10",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.6",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "request": "^2.88.2"
+  }
+}

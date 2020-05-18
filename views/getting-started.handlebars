@@ -1,0 +1,430 @@
+<img class="home-banner animated fadeIn" style="object-position: 50% 30%;" src="/images/palace.png">
+
+<div class="container-fill container">
+    <div class="gs-container">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="list-group" id="list-tab" role="tablist" style="margin-bottom: 16px;">
+                    <a class="list-group-item list-group-item-action active" data-toggle="list" href="#network" role="tab">Networks</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#claiming" role="tab">Claiming</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#factory" role="tab">Factories</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#snitch" role="tab">Snitches</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#acid" role="tab">Acid</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#bastion" role="tab">Bastions</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#prisonpearl" role="tab">Prison Pearl</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#world" role="tab">World</a>
+                </div>
+            </div>
+
+            <div class="col-sm-10">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="network" role="tabpanel">
+                        <div class="row">
+                            <div class="col-sm">
+                                <img src="/images/network.png" style="max-width: 100%;">
+                                <h1 style="font-family: 'Archivo Black', sans-serif; margin: 0; padding: 0;">NETWORKS</h1>
+
+                                <p>
+                                    Networks allow you to create groups that hold ownership over Acid Blocks, Snitch Blocks, Bastion Blocks and Factories.
+                                    You can invite as many players to your network as you want and you can be in as many networks as you want too.
+                                </p>
+
+                                <p style="margin-top: 16px;">
+                                    You can control every members network permission to give individual players as much or as little control over your network as you please.
+                                </p>
+
+                                <p>
+                                    Networks do not prevent you from attacking each other and there is no indicator as to who which network.
+                                </p>
+                            </div>
+
+                            <div class="col-sm">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/l7iSOMWphFg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+
+                                <h5 style="margin-top: 8px;">Commands</h5>
+                                <p style="font-size: 0.8rem;"><kbd>/network create &lt;name&gt;</kbd> - Create a new network</p>
+                                <p style="font-size: 0.8rem;"><kbd>/network invite &lt;network&gt; &lt;username&gt;</kbd> - Invite a player to your network</p>
+                                <p style="font-size: 0.8rem;"><kbd>/network join &lt;network&gt;</kbd> - Join a network that as invited you</p>
+                                <p style="font-size: 0.8rem;"><kbd>/network join &lt;network&gt; [password]</kbd> - Join a network using a Password</p>
+                                <p style="font-size: 0.8rem;"><kbd>/network pending</kbd> - View all of your pending network invitations</p>
+                                <p style="font-size: 0.8rem;"><kbd>/network deny &lt;network&gt;</kbd> - Deny an invitation to join a network</p>
+                                <p style="font-size: 0.8rem;"><kbd>/network password &lt;network&gt; &lt;password&gt;</kbd> - Change your network password</p>
+                                <p style="font-size: 0.8rem;"><kbd>/network playerlist &lt;network&gt;</kbd> - View your networks member list</p>
+                                <p style="font-size: 0.8rem;"><kbd>/network permission &lt;network&gt; &lt;username&gt;</kbd> - Edit a members permissions</p>
+                                <p style="font-size: 0.8rem;"><kbd>/network delete &lt;network&gt;</kbd> - Delete your network</p>
+                                <p style="font-size: 0.8rem;"><kbd>/network uninvite &lt;network&gt; &lt;username&gt;</kbd> - Revoke a players invitation</p>
+                                <p style="font-size: 0.8rem;"><kbd>/network leave &lt;network&gt;</kbd> - Leave a network</p>
+                                <p style="font-size: 0.8rem;"><kbd>/network kick &lt;network&gt; &lt;username&gt;</kbd> - Kick a player from the network</p>
+                                <p style="font-size: 0.8rem;"><kbd>/network rename &lt;network&gt; &lt;name&gt;</kbd> - Rename your network</p>
+                                <p style="font-size: 0.8rem;"><kbd>/network list</kbd> - List all networks you are a member of</p>
+                                <p style="font-size: 0.8rem;"><kbd>/network rally</kbd> - Broadcast your location to your network</p>
+                                <p style="font-size: 0.8rem;"><kbd>/network help [page]</kbd> - View a list of these commands in-game</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="claiming" role="tabpanel">
+                        <div class="row">
+                            <div class="col-sm">
+                                <img src="/images/claim.png" style="max-width: 100%;">
+                                <h1 style="font-family: 'Archivo Black', sans-serif; margin: 0; padding: 0;">CLAIMS</h1>
+
+                                <p style="margin: 0; padding: 0;">
+                                    Claims allow you to protect your land from other players.
+                                </p>
+
+                                <p style="margin-top: 16px;">
+                                    There are three types of fortification materials: Stone, Iron and Diamond.
+                                </p>
+
+                                <p><b>Stone:</b> Matures in 10 minutes, adds 100 durability to the block.</p>
+                                <p><b>Iron:</b> Matures in 1 hour, adds 500 durability to the block.</p>
+                                <p><b>Diamond:</b> Matures in 6 hours, adds 1800 durability to the block.</p>
+
+                                <p style="margin: 0; padding: 0; color: red!important;"><b>REMEMBER!</b></p>
+                                <p>All blocks can be broken <i>eventually</i>. Each time a fortified block is broken it loses 1 durability. Once it reaches 0, the block breaks and drops the fortification material.</p>
+                            </div>
+
+                            <div class="col-sm">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gM_DY06aQ40" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+
+                                <h5 style="margin-top: 8px;">Commands</h5>
+                                <p style="font-size: 0.8rem;"><kbd>/claim info</kbd> - Enter INFO mode, right-click to view a Claim</p>
+                                <p style="font-size: 0.8rem;"><kbd>/claim materials</kbd> - View a list of valid fortification materials</p>
+                                <p style="font-size: 0.8rem;"><kbd>/claim fortify &lt;network&gt;</kbd> - Begin fortifying every block you place with the fortification material you're currently holding</p>
+                                <p style="font-size: 0.8rem;"><kbd>/claim reinforce &lt;network&gt;</kbd> - Begin reinforcing every block you punch with the foritifcation material you're currently holding</p>
+                                <p style="font-size: 0.8rem;"><kbd>/claim disable</kbd> - Leave any claiming modes you're currently in</p>
+                                <p style="font-size: 0.8rem;"><kbd>/claim help</kbd> - View a list of these commands in-game</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="factory" role="tabpanel">
+                        <div class="row">
+                            <div class="col-sm">
+                                <img src="/images/factory.png" style="max-width: 100%;">
+                                <h1 style="font-family: 'Archivo Black', sans-serif; margin: 0; padding: 0;">FACTORIES</h1>
+
+                                <p>
+                                    <b>Note:</b> The furnace needs to be in the middle.
+                                </p>
+
+                                <p>
+                                    Factories allow you to mass produce resources. Think of them as much fancier Furnaces.
+                                    To create a Factory, place a Crafting Bench, Furnace and Chest all next to each other.
+                                </p>
+
+                                <p style="margin-bottom: 0; padding-bottom: 0;">
+                                     Once you've placed the blocks type
+                                </p>
+
+                                <p>
+                                     <kbd>/factory create &lt;network&gt;</kbd> to initialize it.
+                                </p>
+
+                                <p>
+                                    Once the Factory has been created, right-click the Crafting Bench to access a GUI containing
+                                    every possible Factory Recipe. When you hover over a Recipe you will notice they show a list of
+                                    <b>Input Resources</b> and <b>Output Resources</b> along with a <b>Time</b> and <b>Experience Reward</b>.
+                                </p>
+
+                                <img src="/images/factory-example.jpg" style="max-width: 100%; margin-bottom: 16px;">
+
+                                <p style="margin: 0; padding: 0;"><b>Input Resources</b></p>
+                                <p>This is what you have to pay. Upon clicking this recipe the items will be subtracted from your inventory and the job will start.</p>
+
+                                <p style="margin: 0; padding: 0;"><b>Output Resources</b></p>
+                                <p>This is what you will receive. These items will be automatically placed in the Chest.</p>
+
+                                <p style="margin: 0; padding: 0;"><b>Time</b></p>
+                                <p>This is the amount of time it is going to take to run this job.</p>
+
+                                <p style="margin: 0; padding: 0;"><b>Experience Reward</b></p>
+                                <p>As your Factory completes jobs this number will go towards the EXP level of the Factory. As the Factory levels up you will earn access to more recipes.</p>
+
+                                <p>
+                                    Once you have selected a job and it is running, you can monitor it by right-clicking the Furnace.
+                                </p>
+
+                                <p>
+                                    <b>Note:</b> You can run up to 9 jobs per Factory.
+                                </p>
+                            </div>
+
+                            <div class="col-sm">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/l-2ey60apUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+
+                                <h5 style="margin-top: 8px;">Commands</h5>
+                                <p style="font-size: 0.8rem;"><kbd>/factory create &lt;network&gt;</kbd> - Create a factory</p>
+                                <p style="font-size: 0.8rem;"><kbd>/factory recipes</kbd> - Open a GUI containing every possible recipe</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="snitch" role="tabpanel">
+                        <div class="row">
+                            <div class="col-sm">
+                                <img src="/images/snitch.png" style="max-width: 100%;">
+                                <h1 style="font-family: 'Archivo Black', sans-serif; margin: 0; padding: 0;">SNITCHES</h1>
+
+                                <p style="margin: 0; padding: 0;">
+                                    Snitches are a handy tool for both defensive and agressive playstyles.
+                                </p>
+
+                                <p style="margin-top: 16px;">
+                                    In the case of defense, Snitches hold logs that last for up to 3 days. During this time it will track
+                                    events that happen within a <b>16 block radius</b> of it. These events include:
+                                    Connections, Disconnections, Spottings, Block Breaking, Block Placing, Block Interactions
+                                    and Player Deaths. When these events are logged initially, every player with the proper
+                                    permissions on your network can see exactly where the spotted player is in their chat. This is extremely
+                                    handy if you want to protect your base and need to be notified that a player may be attacking it.
+                                </p>
+
+                                <p style="margin-top: 16px;">
+                                    When it comes to using Snitches offensively, they are a great tool for tracking down players. If you have a
+                                    general idea of where to look for players but don't know exactly or when, placing a Snitch allows you to watch
+                                    an area without actually being there.
+                                </p>
+
+                                <p style="margin-top: 16px; margin-bottom: 0; padding: 0;">To create a Snitch, type</p>
+                                <p style="margin-bottom: 0; padding: 0;"><kbd>/snitch create &lt;network&gt; &lt;location description&gt;</kbd></p>
+                                <p>while looking at a Jukebox.</p>
+                            </div>
+                            
+                            <div class="col-sm">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1zJGXlTuMz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+
+                                <h5 style="margin-top: 8px;">Commands</h5>
+                                <p style="font-size: 0.8rem;"><kbd>/snitch create &lt;network&gt; &lt;location description&gt;</kbd> - Create a Snitch</p>
+                                <p style="font-size: 0.8rem;"><kbd>/snitch log</kbd> - View the logs for a Snitch block you are looking at</p>
+                                <p style="font-size: 0.8rem;"><kbd>/snitch clear</kbd> - Clear the logs for a Snitch block you are looking at</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="acid" role="tabpanel">
+                        <div class="row">
+                            <div class="col-sm">
+                                <img src="/images/acid.png" style="max-width: 100%;">
+                                <h1 style="font-family: 'Archivo Black', sans-serif; margin: 0; padding: 0;">ACID</h1>
+
+                                <p style="margin: 0; padding: 0;">
+                                    Acid Blocks will tick damage to all fortified blocks within a <b>3x3x3</b> radius of the Acid Block.
+                                    Acid Blocks can be stacked together, dealing multiple points of damage per tick.
+                                </p>
+
+                                <br>
+
+                                <p style="margin: 0; padding: 0;">
+                                    Type <kbd>/acid create &lt;network&gt;</kbd> while looking at a Gold Block to create a new Acid Block.
+                                    Once the Acid Block matures it will begin damaging all fortified blocks within its range.
+                                </p>
+
+                                <br>
+
+                                <p style="margin: 0; padding: 0;">
+                                    <b>Note:</b> Acid Blocks will automatically expire after 3 days.
+                                </p>
+                            </div>
+
+                            <div class="col-sm">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nZnl4KR7nWk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+
+                                <h5 style="margin-top: 8px;">Commands</h5>
+                                <p style="font-size: 0.8rem;"><kbd>/acid create &lt;network&gt;</kbd> - Create an Acid Block</p>
+                                <p style="font-size: 0.8rem;"><kbd>/acid info</kbd> - View information about the Acid Block you're looking at</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="bastion" role="tabpanel">
+                        <div class="row">
+                            <div class="col-sm">
+                                <img src="/images/bastion.png" style="max-width: 100%;">
+                                <h1 style="font-family: 'Archivo Black', sans-serif; margin: 0; padding: 0;">BASTION</h1>
+
+                                <p style="margin: 0; padding: 0;">
+                                    Bastions prevent players who are not in your network from fortifying blocks within a <b>16 block radius</b> of the block.
+                                </p>
+
+                                <br>
+
+                                <p style="margin: 0; padding: 0;">
+                                    Bastions <b>only</b> protect again blocks being fortified <b>above</b> it. This makes Bastions extremely vulnerable to being attacked
+                                    from the side or below.
+                                </p>
+
+                                <br>
+
+                                <p style="margin: 0; padding: 0;">
+                                    Type <kbd>/bastion create &lt;network&gt;</kbd> while looking at a Sponge Block to create a new Bastion Block.
+                                    Once the Bastion Block matures players that are not in the network will not be able to fortify blocks in that are in its range.
+                                </p>
+
+                                <br>
+
+                                <p style="margin: 0; padding: 0;">
+                                    To check if you're in a Bastion Field, type <kbd>/bastion near</kbd> to view a detailed list of all Bastions you are in the field of.
+                                </p>
+                            </div>
+
+                            <div class="col-sm">
+                                <div class="col-sm">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VNvK1XcVIss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+
+                                    <h5 style="margin-top: 8px;">Commands</h5>
+                                    <p style="font-size: 0.8rem;"><kbd>/bastion create &lt;network&gt;</kbd> - Create a Bastion Block</p>
+                                    <p style="font-size: 0.8rem;"><kbd>/bastion info</kbd> - View info for Bastion Block you're looking at</p>
+                                    <p style="font-size: 0.8rem;"><kbd>/bastion near</kbd> - View a list of all Bastions you are in range of</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="prisonpearl" role="tabpanel">
+                        <div class="row">
+                            <div class="col-sm">
+                                <img src="/images/prisonpearl.png" style="max-width: 100%;">
+                                <h1 style="font-family: 'Archivo Black', sans-serif; margin: 0; padding: 0;">PRISON PEARL</h1>
+
+                                <p style="margin: 0; padding: 0;">
+                                    When a player is slain by someone who has at least 1 Enderpearl in their hotbar the player will be
+                                    imprisoned within that Enderpearl for up to 14 days. From here, it is up to the killing player to hold
+                                    their Prison Pearl and transport it to a location to store it.
+                                </p>
+
+                                <br>
+
+                                <p style="margin: 0; padding: 0;">
+                                    When you are Prison Pearled, you are still allowed to join the server but you can <b>not</b> leave The End.
+                                    The only way you can be set free before 14 days is to be released by another player. You can find the most
+                                    up-to-date location of your Prison Pearl by typing <kbd>/pp locate</kbd>
+                                </p>
+
+                                <br>
+
+                                <p style="margin: 0; padding: 0;">
+                                    <b>Note:</b> You can locate any players Prison Pearl by typing
+                                </p>
+
+                                <p style="margin: 0; padding: 0;">
+                                    <kbd>/pp locate [username]</kbd>
+                                </p>
+
+                                <p style="margin: 0; padding: 0;">This can be extremely handy if you are trying to locate a hidden base.</p>
+
+                                <br>
+
+                                <p style="margin: 0; padding: 0;">
+                                    It is <b>highly</b> recommended to only store Prison Pearls in heavily protected areas. Any player can locate a Prison Pearl you're holding
+                                    and come raid your base. Sometimes, it may be better to let someone free.
+                                </p>
+
+                                <br>
+
+                                <p style="margin: 0; padding: 0;">
+                                    If you do find yourself Prison Pearled you can find out how much longer your imprisonment is by typing <kbd>/pp info</kbd>
+                                </p>
+                            </div>
+
+                            <div class="col-sm">
+                                <h5>Commands</h5>
+                                <p style="font-size: 0.8rem;"><kbd>/pp locate</kbd> - View your Prison Pearl's current location</p>
+                                <p style="font-size: 0.8rem;"><kbd>/pp locate [username]</kbd> - View an imprisoned player's Prison Pearl location</p>
+                                <p style="font-size: 0.8rem;"><kbd>/pp mute</kbd> - Mute location updates for your Prison Pearl</p>
+                                <p style="font-size: 0.8rem;"><kbd>/pp info</kbd> - View your imprisonment information</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="world" role="tabpanel">
+                        <div class="row">
+                            <div class="col-sm">
+                                <img src="/images/world.png" style="max-width: 100%;">
+                                <h1 style="font-family: 'Archivo Black', sans-serif; margin: 0; padding: 0;">THE ARES WORLD</h1>
+
+                                <p style="margin: 0; padding: 0;">The world is a custom-generated 10,000 x 10,000 map with several major changes to the vanilla gameplay. Here is a condensed list:</p>
+
+                                <ul>
+                                    <li style="margin-top: 16px; margin-bottom: 16px;">There are no fast-travel methods (Example: /f home)</li>
+                                    <li style="margin-top: 16px; margin-bottom: 16px;">Mob Spawners are disabled</li>
+                                    <li style="margin-top: 16px; margin-bottom: 16px;">Looting and Fortune enchantments grant bonus experience</li>
+                                    <li style="margin-top: 16px; margin-bottom: 16px;">All ores have been drained from the map and have been replaced by a system which spawns ore veins around you as you mine</li>
+                                    <li style="margin-top: 16px; margin-bottom: 16px;">You can uncover Glowstone and Nether Quartz by breaking Netherrack in The Nether</li>
+                                    <li style="margin-top: 16px; margin-bottom: 16px;">Potion values have been reverted back to pre-1.6</li>
+                                    <li style="margin-top: 16px; margin-bottom: 16px;">Instant Harming & Poison 2 Potions have been disabled</li>
+                                    <li style="margin-top: 16px; margin-bottom: 16px;">Leaving a Minecart with a block directly above it will teleport you to the next highest block above it (Elevators)</li>
+                                    <li style="margin-top: 16px; margin-bottom: 16px;">Commonly spawned mobs will "stack". Stacked mobs are indicated by a number over their heads.</li>
+                                    <li style="margin-top: 16px; margin-bottom: 16px;">Emeralds can be converted to EXP Bottles</li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm">
+                                <h5>Commands</h5>
+                                <p style="display: block; font-size: 1rem; font-weight: bold; margin: 0; padding: 0; border-bottom: 1px solid black; margin-bottom: 8px;">Spawn</p>
+                                <p style="font-size: 0.8rem;"><kbd>/spawn</kbd> - Randomly spawn in to the map</p>
+                                <p style="font-size: 0.8rem;"><kbd>/spawn bed</kbd> - Spawn in your bed</p>
+                                <p style="font-size: 0.8rem;"><kbd>/spawn request &lt;player&gt;</kbd> - <span class="badge badge-info">Premium Only</span> - Request to teleport to a player</p>
+                                <p style="font-size: 0.8rem;"><kbd>/spawn accept &lt;player&gt;</kbd> - Accept a player's teleport request</p>
+
+                                <p style="display: block; font-size: 1rem; font-weight: bold; margin: 0; padding: 0; border-bottom: 1px solid black; margin-bottom: 8px;">Combat</p>
+                                <p style="font-size: 0.8rem;"><kbd>/pvp enable</kbd> - Remove your Prison Pearl Protection</p>
+
+                                <p style="display: block; font-size: 1rem; font-weight: bold; margin: 0; padding: 0; border-bottom: 1px solid black; margin-bottom: 8px;">Compactors</p>
+                                <p style="font-size: 0.8rem;"><kbd>/compact</kbd> - Compact every block of the type you're holding to 1 single item. (Costs 5 levels per 64 blocks)</p>
+                                <p style="font-size: 0.8rem;"><kbd>/decompact</kbd> - Reverts a compacted item back to normal form</p>
+
+                                <p style="display: block; font-size: 1rem; font-weight: bold; margin: 0; padding: 0; border-bottom: 1px solid black; margin-bottom: 8px;">EXP Bottling</p>
+                                <p style="font-size: 0.8rem;"><kbd>/bottle</kbd> - <span class="badge badge-info">Premium Only</span> - Place all of your current EXP Levels in a glass bottle</p>
+
+                                <p style="display: block; font-size: 1rem; font-weight: bold; margin: 0; padding: 0; border-bottom: 1px solid black; margin-bottom: 8px;">Settings</p>
+                                <p style="font-size: 0.8rem;"><kbd>/ares settings</kbd> - Access settings directly related to Ares</p>
+                                <p style="font-size: 0.8rem;"><kbd>/settings</kbd> - Access settings across all Ares servers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Updates the window hash when a new tab is clicked
+    $('#list-tab a').on('click', function (e) {
+        e.preventDefault();
+
+        const input = this + '';
+        const split = input.split('#');
+        const hash = split[(split.length - 1)];
+
+        window.location.hash = hash;
+
+        $(this).tab('show');
+    })
+</script>
+
+<script>
+    // Allows for direct linking to tabs (e.g /getting-started#claiming)
+    $(document).ready(function() {
+        const hash = window.location.hash;
+
+        if (hash == '') {
+            return;
+        }
+
+        $('#list-tab a[href="' + hash + '"]').tab('show');
+    });
+</script>

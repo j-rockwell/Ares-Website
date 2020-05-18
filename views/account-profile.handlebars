@@ -1,0 +1,31 @@
+<div class="container container-fill">
+    <div class="row">
+        <div class="col-sm-3 profile-sidebar">
+            <img src="https://minotar.net/avatar/{{account.username}}" style="width: 100%;">
+
+            <h1 style="text-align: center; margin-top: 8px;">{{account.username}}</h1>
+
+            <p>Joined {{create_date}}</p>
+
+            {{#if account.discord_id}}
+                <p><i class="fab fa-discord"></i> {{account.discord_id}}</p>
+            {{/if}}
+
+            {{#if account.youtube_channel}}
+                <p><i class="fab fa-youtube-square"></i> <a href="https://youtube.com/user/{{account.youtube_channel}}">{{account.youtube_channel}}</a></p>
+            {{/if}}
+
+            {{#if account.twitch_channel}}
+                <p><i class="fab fa-twitch"></i> <a href="https://twitch.tv/{{account.twitch_channel}}">{{account.twitch_channel}}</a></p>
+            {{/if}}
+
+            {{#if ownership}}
+                <a href="/account/edit" class="btn btn-dark btn-sm btn-block" role="button" aria-pressed="true" style="margin-top: 32px;">Edit Profile</a>
+            {{/if}}
+        </div>
+
+        <div class="col-sm-9">
+
+        </div>
+    </div>
+</div>

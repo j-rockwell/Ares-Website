@@ -1,0 +1,27 @@
+<img class="home-banner animated fadeIn" style="object-position: 50% 40%;" src="/images/palace2.png">
+
+<div class="container container-fill">
+    <div class="account-form-container animated fadeIn">
+        <h1>Login</h1>
+
+        <p>Enter your email and password</p>
+
+        <br>
+
+        <form class="account-login-form" action="/account/login" method="POST">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter a password that is 6-32 characters long" required>
+            </div>
+
+            <button type="submit" class="btn btn-dark">Login</button>
+        </form>
+
+        <p style="margin-top: 72px;">Forgot your password? Type <kbd>/account reset</kbd> in-game to receive an account reset link</p>
+    </div>
+</div>
